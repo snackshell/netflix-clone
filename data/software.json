@@ -1,0 +1,785 @@
+[
+  {
+    "name": "Ardour",
+    "category": "Audio",
+    "description": "Multitrack digital audio workstation for recording, editing and mixing.",
+    "license": "GPL-2.0",
+    "foss": true,
+    "package": "apt",
+    "tags": ["daw", "recording", "mixing", "midi"]
+  },
+  {
+    "name": "Audacity",
+    "category": "Audio",
+    "description": "Simple multi-track audio editor and recorder.",
+    "license": "GPL-2.0",
+    "foss": true,
+    "package": "apt",
+    "tags": ["editor", "recording", "podcast", "waveform"]
+  },
+  {
+    "name": "LMMS",
+    "category": "Audio",
+    "description": "Music production suite with a pattern-based sequencer.",
+    "license": "GPL-2.0",
+    "foss": true,
+    "package": "flatpak",
+    "tags": ["music", "sequencer", "synth", "beats"]
+  },
+  {
+    "name": "Mixxx",
+    "category": "Audio",
+    "description": "DJ software with beat detection and controller support.",
+    "license": "GPL-2.0",
+    "foss": true,
+    "package": "apt",
+    "tags": ["dj", "mixing", "controller", "live"]
+  },
+  {
+    "name": "mpv",
+    "category": "Audio",
+    "description": "Scriptable media player with excellent codec coverage.",
+    "license": "GPL-2.0",
+    "foss": true,
+    "package": "apt",
+    "tags": ["player", "video", "cli", "minimal"]
+  },
+  {
+    "name": "PipeWire",
+    "category": "Audio",
+    "description": "Low-latency audio and video server replacing PulseAudio and JACK.",
+    "license": "MIT",
+    "foss": true,
+    "package": "apt",
+    "tags": ["server", "low-latency", "routing", "jack"]
+  },
+  {
+    "name": "Rhythmbox",
+    "category": "Audio",
+    "description": "Music player and library manager for the GNOME desktop.",
+    "license": "GPL-2.0",
+    "foss": true,
+    "package": "apt",
+    "tags": ["player", "library", "gnome", "podcast"]
+  },
+  {
+    "name": "Strawberry",
+    "category": "Audio",
+    "description": "Fork of Clementine focused on audio quality and library management.",
+    "license": "GPL-3.0",
+    "foss": true,
+    "package": "flatpak",
+    "tags": ["player", "library", "flac", "tag editor"]
+  },
+  {
+    "name": "Clementine",
+    "category": "Audio",
+    "description": "Cross-platform music player and library organiser.",
+    "license": "GPL-3.0",
+    "foss": true,
+    "package": "apt",
+    "tags": ["player", "library", "radio"]
+  },
+  {
+    "name": "Element",
+    "category": "Communication",
+    "description": "Matrix client for encrypted team chat and calls.",
+    "license": "Apache-2.0",
+    "foss": true,
+    "package": "flatpak",
+    "tags": ["chat", "matrix", "encrypted", "calls"]
+  },
+  {
+    "name": "Signal Desktop",
+    "category": "Communication",
+    "description": "End-to-end encrypted messenger, desktop client.",
+    "license": "GPL-3.0",
+    "foss": true,
+    "package": "apt",
+    "tags": ["chat", "encrypted", "messenger"]
+  },
+  {
+    "name": "Thunderbird",
+    "category": "Communication",
+    "description": "Email, calendar and newsgroup client with OpenPGP support.",
+    "license": "MPL-2.0",
+    "foss": true,
+    "package": "apt",
+    "tags": ["email", "calendar", "pgp", "contacts"]
+  },
+  {
+    "name": "HexChat",
+    "category": "Communication",
+    "description": "Graphical IRC client with scripting support.",
+    "license": "GPL-2.0",
+    "foss": true,
+    "package": "apt",
+    "tags": ["irc", "chat", "scripting"]
+  },
+  {
+    "name": "Jitsi Meet",
+    "category": "Communication",
+    "description": "Video conferencing client that works in the browser or as an app.",
+    "license": "Apache-2.0",
+    "foss": true,
+    "package": "flatpak",
+    "tags": ["video call", "conference", "webrtc"]
+  },
+  {
+    "name": "Fractal",
+    "category": "Communication",
+    "description": "GTK Matrix client built for the GNOME desktop.",
+    "license": "GPL-3.0",
+    "foss": true,
+    "package": "flatpak",
+    "tags": ["chat", "matrix", "gnome", "gtk"]
+  },
+  {
+    "name": "Neovim",
+    "category": "Development",
+    "description": "Refactored Vim with built-in LSP, Lua config and async plugins.",
+    "license": "Apache-2.0",
+    "foss": true,
+    "package": "apt",
+    "tags": ["editor", "vim", "lsp", "terminal"]
+  },
+  {
+    "name": "VS Code",
+    "category": "Development",
+    "description": "Extensible code editor with a huge extension marketplace.",
+    "license": "MIT",
+    "foss": true,
+    "package": "apt",
+    "tags": ["editor", "ide", "extensions", "debugger"]
+  },
+  {
+    "name": "VSCodium",
+    "category": "Development",
+    "description": "Telemetry-free build of VS Code from community sources.",
+    "license": "MIT",
+    "foss": true,
+    "package": "flatpak",
+    "tags": ["editor", "ide", "privacy", "no telemetry"]
+  },
+  {
+    "name": "Git",
+    "category": "Development",
+    "description": "Distributed version control system.",
+    "license": "GPL-2.0",
+    "foss": true,
+    "package": "apt",
+    "tags": ["vcs", "version control", "cli"]
+  },
+  {
+    "name": "Emacs",
+    "category": "Development",
+    "description": "Extensible, self-documenting text editor and Lisp environment.",
+    "license": "GPL-3.0",
+    "foss": true,
+    "package": "apt",
+    "tags": ["editor", "lisp", "org-mode", "terminal"]
+  },
+  {
+    "name": "Toolbox",
+    "category": "Development",
+    "description": "Containerised command-line environments for immutable distros.",
+    "license": "Apache-2.0",
+    "foss": true,
+    "package": "dnf",
+    "tags": ["containers", "podman", "immutable", "fedora"]
+  },
+  {
+    "name": "Docker",
+    "category": "Development",
+    "description": "Container runtime and CLI for building and shipping images.",
+    "license": "Apache-2.0",
+    "foss": true,
+    "package": "apt",
+    "tags": ["containers", "images", "cli", "runtime"]
+  },
+  {
+    "name": "Podman",
+    "category": "Development",
+    "description": "Daemonless container engine, drop-in compatible with Docker CLI.",
+    "license": "Apache-2.0",
+    "foss": true,
+    "package": "apt",
+    "tags": ["containers", "rootless", "daemonless"]
+  },
+  {
+    "name": "IntelliJ IDEA Community",
+    "category": "Development",
+    "description": "JVM-focused IDE with strong refactoring and debugging.",
+    "license": "Apache-2.0",
+    "foss": true,
+    "package": "snap",
+    "tags": ["ide", "java", "kotlin", "refactoring"]
+  },
+  {
+    "name": "Anki",
+    "category": "Education",
+    "description": "Spaced-repetition flashcard app with shared decks.",
+    "license": "AGPL-3.0",
+    "foss": true,
+    "package": "apt",
+    "tags": ["flashcards", "spaced repetition", "study", "language"]
+  },
+  {
+    "name": "KDE Edu",
+    "category": "Education",
+    "description": "Bundle of teaching apps including KGeography and KStars.",
+    "license": "GPL-2.0",
+    "foss": true,
+    "package": "apt",
+    "tags": ["kde", "learning", "science", "bundle"]
+  },
+  {
+    "name": "Stellarium",
+    "category": "Education",
+    "description": "Photorealistic planetarium rendering the night sky in real time.",
+    "license": "GPL-2.0",
+    "foss": true,
+    "package": "apt",
+    "tags": ["astronomy", "planetarium", "stars", "science"]
+  },
+  {
+    "name": "Celestia",
+    "category": "Education",
+    "description": "Free 3D space simulation of the solar system and beyond.",
+    "license": "GPL-2.0",
+    "foss": true,
+    "package": "apt",
+    "tags": ["astronomy", "3d", "simulation", "space"]
+  },
+  {
+    "name": "Kalzium",
+    "category": "Education",
+    "description": "Periodic table and chemistry reference from KDE.",
+    "license": "GPL-2.0",
+    "foss": true,
+    "package": "apt",
+    "tags": ["chemistry", "science", "kde", "reference"]
+  },
+  {
+    "name": "Dolphin",
+    "category": "File Management",
+    "description": "Feature-rich KDE file manager with split view and tabs.",
+    "license": "GPL-2.0",
+    "foss": true,
+    "package": "apt",
+    "tags": ["file manager", "kde", "tabs", "split view"]
+  },
+  {
+    "name": "Nautilus",
+    "category": "File Management",
+    "description": "GNOME Files, the default file manager of the GNOME desktop.",
+    "license": "GPL-3.0",
+    "foss": true,
+    "package": "apt",
+    "tags": ["file manager", "gnome", "files"]
+  },
+  {
+    "name": "ranger",
+    "category": "File Management",
+    "description": "Terminal file manager with vi-style keybindings and previews.",
+    "license": "GPL-3.0",
+    "foss": true,
+    "package": "apt",
+    "tags": ["file manager", "terminal", "vim", "preview"]
+  },
+  {
+    "name": "nnn",
+    "category": "File Management",
+    "description": "Fast, minimal terminal file manager with plugin support.",
+    "license": "BSD-2-Clause",
+    "foss": true,
+    "package": "apt",
+    "tags": ["file manager", "terminal", "fast", "plugins"]
+  },
+  {
+    "name": "Double Commander",
+    "category": "File Management",
+    "description": "Two-pane file manager inspired by Total Commander.",
+    "license": "GPL-2.0",
+    "foss": true,
+    "package": "apt",
+    "tags": ["file manager", "dual pane", "total commander"]
+  },
+  {
+    "name": "rsync",
+    "category": "File Management",
+    "description": "Incremental file transfer and synchronisation tool.",
+    "license": "GPL-3.0",
+    "foss": true,
+    "package": "apt",
+    "tags": ["sync", "backup", "cli", "transfer"]
+  },
+  {
+    "name": "Krita",
+    "category": "Graphics",
+    "description": "Digital painting and illustration studio built for tablets.",
+    "license": "GPL-3.0",
+    "foss": true,
+    "package": "apt",
+    "tags": ["painting", "illustration", "tablet", "animation"]
+  },
+  {
+    "name": "GIMP",
+    "category": "Graphics",
+    "description": "Raster image editor for photo retouching and compositing.",
+    "license": "GPL-3.0",
+    "foss": true,
+    "package": "apt",
+    "tags": ["photo", "raster", "retouch", "editor"]
+  },
+  {
+    "name": "Inkscape",
+    "category": "Graphics",
+    "description": "Vector graphics editor with full SVG support.",
+    "license": "GPL-3.0",
+    "foss": true,
+    "package": "apt",
+    "tags": ["vector", "svg", "illustration", "design"]
+  },
+  {
+    "name": "Blender",
+    "category": "Graphics",
+    "description": "3D modelling, sculpting, animation and video editing suite.",
+    "license": "GPL-3.0",
+    "foss": true,
+    "package": "flatpak",
+    "tags": ["3d", "animation", "render", "sculpt"]
+  },
+  {
+    "name": "Darktable",
+    "category": "Graphics",
+    "description": "Non-destructive RAW photo workflow and darkroom.",
+    "license": "GPL-3.0",
+    "foss": true,
+    "package": "apt",
+    "tags": ["photo", "raw", "workflow", "darkroom"]
+  },
+  {
+    "name": "digiKam",
+    "category": "Graphics",
+    "description": "Photo management with tagging, face detection and RAW support.",
+    "license": "GPL-2.0",
+    "foss": true,
+    "package": "apt",
+    "tags": ["photo", "library", "tags", "raw"]
+  },
+  {
+    "name": "Scribus",
+    "category": "Graphics",
+    "description": "Desktop publishing for brochures, posters and PDF output.",
+    "license": "GPL-2.0",
+    "foss": true,
+    "package": "apt",
+    "tags": ["publishing", "layout", "pdf", "print"]
+  },
+  {
+    "name": "Firefox",
+    "category": "Internet",
+    "description": "Independent browser with strong tracking protection.",
+    "license": "MPL-2.0",
+    "foss": true,
+    "package": "apt",
+    "tags": ["browser", "web", "privacy", "extensions"]
+  },
+  {
+    "name": "Chromium",
+    "category": "Internet",
+    "description": "Open-source base of Chrome, packaged by most distros.",
+    "license": "BSD-3-Clause",
+    "foss": true,
+    "package": "apt",
+    "tags": ["browser", "web", "chromium"]
+  },
+  {
+    "name": "qBittorrent",
+    "category": "Internet",
+    "description": "BitTorrent client with a clean Qt interface and search plugins.",
+    "license": "GPL-2.0",
+    "foss": true,
+    "package": "apt",
+    "tags": ["torrent", "bittorrent", "download"]
+  },
+  {
+    "name": "Transmission",
+    "category": "Internet",
+    "description": "Lightweight BitTorrent client with a daemon and web UI.",
+    "license": "GPL-3.0",
+    "foss": true,
+    "package": "apt",
+    "tags": ["torrent", "daemon", "web ui", "lightweight"]
+  },
+  {
+    "name": "curl",
+    "category": "Internet",
+    "description": "Command-line transfer tool for dozens of protocols.",
+    "license": "MIT",
+    "foss": true,
+    "package": "apt",
+    "tags": ["http", "cli", "download", "api"]
+  },
+  {
+    "name": "wget",
+    "category": "Internet",
+    "description": "Non-interactive network downloader with recursive fetch.",
+    "license": "GPL-3.0",
+    "foss": true,
+    "package": "apt",
+    "tags": ["download", "cli", "recursive", "http"]
+  },
+  {
+    "name": "LibreOffice",
+    "category": "Office",
+    "description": "Full office suite: Writer, Calc, Impress, Draw, Base, Math.",
+    "license": "MPL-2.0",
+    "foss": true,
+    "package": "apt",
+    "tags": ["office", "documents", "spreadsheet", "slides"]
+  },
+  {
+    "name": "OnlyOffice",
+    "category": "Office",
+    "description": "Office suite with high-fidelity Microsoft format compatibility.",
+    "license": "AGPL-3.0",
+    "foss": true,
+    "package": "flatpak",
+    "tags": ["office", "docx", "xlsx", "compatibility"]
+  },
+  {
+    "name": "Zathura",
+    "category": "Office",
+    "description": "Keyboard-driven PDF and document viewer.",
+    "license": "Zlib",
+    "foss": true,
+    "package": "apt",
+    "tags": ["pdf", "viewer", "keyboard", "minimal"]
+  },
+  {
+    "name": "Calibre",
+    "category": "Office",
+    "description": "E-book library manager and format converter.",
+    "license": "GPL-3.0",
+    "foss": true,
+    "package": "apt",
+    "tags": ["ebook", "library", "epub", "convert"]
+  },
+  {
+    "name": "Obsidian",
+    "category": "Office",
+    "description": "Markdown notes with backlinks and a local-first vault.",
+    "license": "Proprietary",
+    "foss": false,
+    "package": "appimage",
+    "tags": ["notes", "markdown", "knowledge base", "backlinks"]
+  },
+  {
+    "name": "Joplin",
+    "category": "Office",
+    "description": "Encrypted note-taking and to-do app with sync.",
+    "license": "AGPL-3.0",
+    "foss": true,
+    "package": "flatpak",
+    "tags": ["notes", "markdown", "encrypted", "sync"]
+  },
+  {
+    "name": "UFW",
+    "category": "Security",
+    "description": "Uncomplicated Firewall, a friendly front end to iptables/nftables.",
+    "license": "GPL-3.0",
+    "foss": true,
+    "package": "apt",
+    "tags": ["firewall", "netfilter", "cli", "simple"]
+  },
+  {
+    "name": "GnuPG",
+    "category": "Security",
+    "description": "OpenPGP implementation for signing and encrypting data.",
+    "license": "GPL-3.0",
+    "foss": true,
+    "package": "apt",
+    "tags": ["pgp", "encryption", "signing", "keys"]
+  },
+  {
+    "name": "KeePassXC",
+    "category": "Security",
+    "description": "Offline password manager using local encrypted databases.",
+    "license": "GPL-2.0",
+    "foss": true,
+    "package": "apt",
+    "tags": ["passwords", "vault", "offline", "kdbx"]
+  },
+  {
+    "name": "Bitwarden",
+    "category": "Security",
+    "description": "Password manager with self-hostable sync server.",
+    "license": "GPL-3.0",
+    "foss": true,
+    "package": "flatpak",
+    "tags": ["passwords", "sync", "self-hosted", "vault"]
+  },
+  {
+    "name": "OpenSSH",
+    "category": "Security",
+    "description": "SSH client and server for encrypted remote access.",
+    "license": "BSD",
+    "foss": true,
+    "package": "apt",
+    "tags": ["ssh", "remote", "encryption", "keys"]
+  },
+  {
+    "name": "ClamAV",
+    "category": "Security",
+    "description": "Antivirus scanner with an updatable signature database.",
+    "license": "GPL-2.0",
+    "foss": true,
+    "package": "apt",
+    "tags": ["antivirus", "scanner", "mail", "clamd"]
+  },
+  {
+    "name": "VeraCrypt",
+    "category": "Security",
+    "description": "Disk encryption for containers and full volumes.",
+    "license": "Apache-2.0",
+    "foss": true,
+    "package": "manual",
+    "tags": ["encryption", "disk", "volumes", "hidden"]
+  },
+  {
+    "name": "nftables",
+    "category": "Security",
+    "description": "Modern packet filtering framework replacing iptables.",
+    "license": "GPL-2.0",
+    "foss": true,
+    "package": "apt",
+    "tags": ["firewall", "netfilter", "packets", "cli"]
+  },
+  {
+    "name": "GNOME",
+    "category": "System",
+    "description": "Desktop environment focused on simplicity and keyboard flow.",
+    "license": "GPL-2.0",
+    "foss": true,
+    "package": "apt",
+    "tags": ["desktop", "shell", "gtk", "wayland"]
+  },
+  {
+    "name": "KDE Plasma",
+    "category": "System",
+    "description": "Highly configurable desktop environment built on Qt.",
+    "license": "GPL-2.0",
+    "foss": true,
+    "package": "apt",
+    "tags": ["desktop", "plasma", "qt", "customisable"]
+  },
+  {
+    "name": "systemd",
+    "category": "System",
+    "description": "Init system and service manager for most distributions.",
+    "license": "LGPL-2.1",
+    "foss": true,
+    "package": "apt",
+    "tags": ["init", "services", "boot", "journal"]
+  },
+  {
+    "name": "Btrfs",
+    "category": "System",
+    "description": "Copy-on-write filesystem with snapshots and checksums.",
+    "license": "GPL-2.0",
+    "foss": true,
+    "package": "apt",
+    "tags": ["filesystem", "snapshots", "cow", "checksums"]
+  },
+  {
+    "name": "Timeshift",
+    "category": "System",
+    "description": "System restore tool using filesystem or rsync snapshots.",
+    "license": "GPL-3.0",
+    "foss": true,
+    "package": "apt",
+    "tags": ["backup", "snapshots", "restore", "system"]
+  },
+  {
+    "name": "Flatpak",
+    "category": "System",
+    "description": "Sandboxed application distribution with runtimes.",
+    "license": "LGPL-2.1",
+    "foss": true,
+    "package": "apt",
+    "tags": ["packages", "sandbox", "flathub", "runtimes"]
+  },
+  {
+    "name": "Distrobox",
+    "category": "System",
+    "description": "Run any distro's userspace in a tightly integrated container.",
+    "license": "GPL-3.0",
+    "foss": true,
+    "package": "apt",
+    "tags": ["containers", "distro", "podman", "immutable"]
+  },
+  {
+    "name": "htop",
+    "category": "Utilities",
+    "description": "Interactive process viewer with colour and tree mode.",
+    "license": "GPL-2.0",
+    "foss": true,
+    "package": "apt",
+    "tags": ["monitor", "processes", "terminal", "cpu"]
+  },
+  {
+    "name": "btop",
+    "category": "Utilities",
+    "description": "Resource monitor with graphs for CPU, memory, disk and network.",
+    "license": "Apache-2.0",
+    "foss": true,
+    "package": "apt",
+    "tags": ["monitor", "graphs", "terminal", "resources"]
+  },
+  {
+    "name": "ripgrep",
+    "category": "Utilities",
+    "description": "Fast recursive search that respects gitignore rules.",
+    "license": "MIT",
+    "foss": true,
+    "package": "apt",
+    "tags": ["search", "grep", "cli", "fast"]
+  },
+  {
+    "name": "fzf",
+    "category": "Utilities",
+    "description": "Fuzzy finder for files, history and anything piped into it.",
+    "license": "MIT",
+    "foss": true,
+    "package": "apt",
+    "tags": ["fuzzy", "search", "cli", "picker"]
+  },
+  {
+    "name": "tmux",
+    "category": "Utilities",
+    "description": "Terminal multiplexer with sessions, panes and windows.",
+    "license": "ISC",
+    "foss": true,
+    "package": "apt",
+    "tags": ["terminal", "multiplexer", "sessions", "panes"]
+  },
+  {
+    "name": "jq",
+    "category": "Utilities",
+    "description": "Command-line JSON processor and formatter.",
+    "license": "MIT",
+    "foss": true,
+    "package": "apt",
+    "tags": ["json", "cli", "query", "format"]
+  },
+  {
+    "name": "bat",
+    "category": "Utilities",
+    "description": "cat clone with syntax highlighting and git integration.",
+    "license": "MIT",
+    "foss": true,
+    "package": "apt",
+    "tags": ["cat", "syntax", "cli", "highlight"]
+  },
+  {
+    "name": "eza",
+    "category": "Utilities",
+    "description": "Modern ls replacement with icons, git status and tree view.",
+    "license": "MIT",
+    "foss": true,
+    "package": "apt",
+    "tags": ["ls", "listing", "icons", "cli"]
+  },
+  {
+    "name": "zoxide",
+    "category": "Utilities",
+    "description": "Smarter cd that learns the directories you actually use.",
+    "license": "MIT",
+    "foss": true,
+    "package": "apt",
+    "tags": ["cd", "navigation", "shell", "cli"]
+  },
+  {
+    "name": "Kdenlive",
+    "category": "Video",
+    "description": "Multi-track non-linear video editor from KDE.",
+    "license": "GPL-2.0",
+    "foss": true,
+    "package": "apt",
+    "tags": ["video editor", "timeline", "kde", "nle"]
+  },
+  {
+    "name": "Shotcut",
+    "category": "Video",
+    "description": "Cross-platform video editor with a wide format range.",
+    "license": "GPL-3.0",
+    "foss": true,
+    "package": "flatpak",
+    "tags": ["video editor", "formats", "timeline"]
+  },
+  {
+    "name": "DaVinci Resolve",
+    "category": "Video",
+    "description": "Professional editing, colour grading and audio post suite.",
+    "license": "Proprietary",
+    "foss": false,
+    "package": "manual",
+    "tags": ["video editor", "colour", "grading", "professional"]
+  },
+  {
+    "name": "OBS Studio",
+    "category": "Video",
+    "description": "Streaming and screen recording with scene composition.",
+    "license": "GPL-2.0",
+    "foss": true,
+    "package": "apt",
+    "tags": ["streaming", "recording", "scenes", "capture"]
+  },
+  {
+    "name": "HandBrake",
+    "category": "Video",
+    "description": "Video transcoder with presets for devices and web.",
+    "license": "GPL-2.0",
+    "foss": true,
+    "package": "apt",
+    "tags": ["transcode", "h264", "presets", "dvd"]
+  },
+  {
+    "name": "FFmpeg",
+    "category": "Video",
+    "description": "Swiss-army CLI for converting, recording and streaming media.",
+    "license": "LGPL-2.1",
+    "foss": true,
+    "package": "apt",
+    "tags": ["cli", "convert", "codec", "streaming"]
+  },
+  {
+    "name": "VLC",
+    "category": "Video",
+    "description": "Plays almost anything, including discs and network streams.",
+    "license": "GPL-2.0",
+    "foss": true,
+    "package": "apt",
+    "tags": ["player", "codecs", "stream", "dvd"]
+  },
+  {
+    "name": "Avidemux",
+    "category": "Video",
+    "description": "Simple cutting, filtering and encoding for video files.",
+    "license": "GPL-2.0",
+    "foss": true,
+    "package": "apt",
+    "tags": ["cut", "filter", "encode", "simple"]
+  },
+  {
+    "name": "Pitivi",
+    "category": "Video",
+    "description": "GNOME video editor with a clean, approachable timeline.",
+    "license": "LGPL-2.1",
+    "foss": true,
+    "package": "flatpak",
+    "tags": ["video editor", "gnome", "timeline", "simple"]
+  }
+]
