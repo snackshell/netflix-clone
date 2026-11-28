@@ -1,83 +1,60 @@
-# Draw Me Linux — Software List
+# Wi-Fi Tool
 
-A curated, hackable list of Linux software, shipped as data + a tiny zero-dependency CLI.
+A small, dependency-free Python CLI that scans nearby Wi-Fi networks and tests
+candidate passwords from a wordlist by asking the operating system to associate
+with the network one candidate at a time.
 
-No build step, no npm install, no network calls. Python 3.8+ only.
+> Use it only on networks you are authorised to access.
 
-## Why
+## Requirements
 
-"Draw me a list of Linux software" usually gets you a wall of text. This repo gives you:
+- Python 3.8 or newer
+- One of the OS networking tools:
+  - **Linux** — `nmcli` (NetworkManager)
+  - **Windows** — `netsh` (built in)
+  - **macOS** — `airport` + `networksetup`
 
-- **`data/software.json`** — the actual dataset (name, category, license, package, tags, description).
-- **`linuxlist.py`** — a CLI that filters, searches, and renders the list as a table, Markdown, or a standalone HTML page.
-- **`data/categories.md`** — a human-readable index generated from the JSON.
+No `pip install` needed.
 
 ## Usage
 
 ```bash
-# Everything, as a table
-python3 linuxlist.py
+# 1. See what is around
+python wifi_tool.py scan
 
-# Filter by category
-python3 linuxlist.py --category "Audio"
+# 2. Build a wordlist (one password per line)
+printf 'password\nhunter2\nMyWifi2024\n' > words.txt
 
-# Search names, tags and descriptions
-python3 linuxlist.py --search "tag editor"
+# 3. Test the candidates
+python wifi_tool.py test "MyNetwork" --wordlist words.txt
 
-# Only free/open-source entries
-python3 linuxlist.py --foss
-
-# Only entries in a given package manager
-python3 linuxlist.py --package apt
-
-# Render Markdown (great for pasting into a wiki)
-python3 linuxlist.py --format md > LIST.md
-
-# Render a single self-contained HTML page
-python3 linuxlist.py --format html > list.html
-
-# Machine-readable output
-python3 linuxlist.py --format json --foss
+# Optional: slow down / speed up attempts
+python wifi_tool.py test "MyNetwork" --wordlist words.txt --delay 2.0
 ```
 
-Run `python3 linuxlist.py --help` for the full flag list.
+If you omit `--wordlist`, a small built-in list of common passwords is used.
 
-## Data model
+## How it works
 
-Each entry in `data/software.json` looks like:
+1. `scan` lists SSIDs with signal strength and security type.
+2. `test` walks the wordlist. For each candidate it:
+   - disconnects from the current network,
+   - attempts to connect with the candidate password,
+   - waits ~2 seconds,
+   - checks the active SSID to confirm success.
+3. It stops at the first candidate that connects and prints it.
 
-```json
-{
-  "name": "Krita",
-  "category": "Graphics",
-  "description": "Digital painting and illustration studio.",
-  "license": "GPL-3.0",
-  "foss": true,
-  "package": "apt",
-  "tags": ["painting", "illustration", "tablet"]
-}
-```
+## Limits
 
-Fields:
-
-| field | type | notes |
-|---|---|---|
-| `name` | string | Display name, unique |
-| `category` | string | One of the categories in `CATEGORIES` |
-| `description` | string | One line, no trailing period required |
-| `license` | string | SPDX-ish identifier, or `Proprietary` |
-| `foss` | bool | Whether source is available under a free license |
-| `package` | string | Primary install source: `apt`, `dnf`, `pacman`, `flatpak`, `snap`, `appimage`, `manual` |
-| `tags` | list of strings | Lowercase search helpers |
-
-## Adding software
-
-1. Add an object to `data/software.json`.
-2. Keep `name` unique and `category` inside the known set.
-3. Run `python3 linuxlist.py --format md > data/categories.md` to refresh the index.
-
-`linuxlist.py` validates the dataset on load and tells you exactly which entry is malformed.
-
-## Scope
-
-This is a *starter* list — roughly a hundred entries across desktop, dev, audio, graphics, and sysadmin work. It is deliberately opinionated and incomplete. Fork it, prune it, make it yours.
+- **Slow.** Roughly one guess every 3–4 seconds. This is a "try the obvious
+  candidates" tool, not a high-speed brute-forcer. Fast WPA2 cracking uses a
+  captured 4-way handshake and offline tools like hashcat/aircrack-ng.
+- **Linux caching.** `nmcli` can cache a failed attempt, so the explicit
+  disconnect before each try matters.
+- **Windows profiles.** Each attempt adds a WLAN profile. Failed profiles linger
+  in `netsh wlan show profiles`; remove one with
+  `netsh wlan delete profile name="SSID"`.
+- **macOS interface.** `en0` is hardcoded; change it if your Wi-Fi interface
+  differs (`networksetup -listallhardwareports`).
+- **WPA3 / enterprise.** The Windows profile template declares `WPA2PSK`, so
+  WPA3 and enterprise networks will not connect with it as written.
